@@ -16,6 +16,7 @@ let rightOption = 0;
 let progress = 0;
 let playing = false;
 let score = 0;
+let result = 0;
 
 window.onload = function() {
     const params = new URLSearchParams(window.location.search);
@@ -31,8 +32,10 @@ window.onload = function() {
    if (categoryID == null) {
         categoryID = 12;
     }
+
     answers.innerHTML = "Answers<br>0/" + questions
     timebar.innerHTML = seconds
+    result = apiCall();
 };
 
 
@@ -61,15 +64,16 @@ function count() {
 }
 
 
-
 async function apiCall() {
+
    var url = "https://opentdb.com/api.php?amount=" + questions + "&category=" + categoryID + "&type=multiple";
    const value = await fetch(url);
    result = await value.json();
+   console.log(url)
    return result;
 }
 
-let result = apiCall();
+
 check()
 
 function loadQuestion(index, interval) {
@@ -80,6 +84,7 @@ function loadQuestion(index, interval) {
         let questionText = result.results[index].question;
         questionbar.innerHTML = questionText;
         let incorrect_answers = result.results[index].incorrect_answers;
+        console.log(result.results[index].correct_answer)
         let falseArray = [];
         options.forEach((o) => {
             if (o.innerHTML != rightOption.innerHTML) {
