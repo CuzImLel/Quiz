@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@600&family=Open+Sans:wght@500;600;700&family=Roboto:wght@100;400;500;700;900&display=swap');
+
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+}
+
+:root {
+    --error: #e41749;
+  }
+
+header{
+    display: block;
+    align-items: center;
+}
+
+header nav {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(51, 108, 155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav h1 {
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: calc(30px + 2vw);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card {
+    background-color: rgb(155, 155, 155);
+    width: 800px;
+    height: 500px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 10px;
+}
+
+.top, .bottom {
+    display: flex;
+    justify-content: center;
+}
+
+
+.options {
+    margin-top: 50px;
+}
+
+.card button {
+    width: 50%;
+    height: 80px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+   
+}
+
+.first {
+    background-color: rgb(182, 49, 49);
+}
+.second {
+    background-color: rgb(43, 59, 202);
+}
+.third {
+    background-color: rgb(209, 198, 39);
+}
+.fourth {
+    background-color: rgb(76, 185, 43);
+}
+
+
+
+.card h2 {
+    border-radius: 10px;
+    padding: 20px;
+    display: block;
+    border: 2px solid blue;
+    height: 100px;
+    text-align: center;
+    font-size: calc(1.2vw);
+    background-color: rgb(87, 177, 255);
+}
+
+.box {
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card span {
+    
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 70px;
+    height: 70px;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+
+.card h4 {
+    font-size: 1.2rem;
+    display: flex;
+    margin-left: 50%;
+    color: white;
+    justify-content: right;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.start {
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.buttonbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.countdown {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    font-size: 3rem;
+    transition: 1s;
+    width: 70px;
+    height: 70px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

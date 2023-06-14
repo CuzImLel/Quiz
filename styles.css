@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@600&family=Open+Sans:wght@500;600;700&family=Roboto:wght@100;400;500;700;900&display=swap');
+
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+}
+
+:root {
+    --error: #e41749;
+  }
+
+header{
+    display: block;
+    align-items: center;
+}
+
+header nav {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(51, 108, 155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav h1 {
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: calc(30px + 2vw);
+}
+
+.config {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(48, 58, 73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box {
+    width: calc(300px + 5vw);
+    height: 200px;
+    background: linear-gradient(180deg, rgb(64, 89, 105) 7%, rgb(57, 120, 161) 100%);
+    border-radius: 20px;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#box h2{
+    color: white;
+    text-align: center;
+    border-bottom: 3px solid rgb(89, 255, 200);
+    font-weight: 500;
+}
+
+#box p {
+    font-size: 18px;
+    color: rgb(252, 254, 255);
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+}
+
+.inputbox {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#box select option {
+    background: #00a6bc !important;
+
+}
+
+#box input, select {
+    padding: 10px;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(151, 255, 220);
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+
+#box span {
+    
+    font-size: calc(40px + 1vw);
+    color: rgb(176, 217, 253);
+    margin-left: 50px;
+    
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.submit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#sub {
+    background-image: linear-gradient(to right, #2294ff 0%, #3e9aa1  51%, #22ffe2  100%);
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    border-color: #1d5357;
+    display: block;
+  }
+
+  #sub:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+  #error-message {
+    color: rgb(255, 250, 250);
+    background-color: #ff0000;
+    border: 1px solid black;
+    width: 50%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: calc(10px + 0.2vw);
+    text-align: center;
+    border-radius: 20px;
+    display: none;
+  }

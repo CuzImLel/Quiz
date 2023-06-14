@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-App | Coded by JustDxniel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>  
+    
+    <header>
+        <nav class="navbar">
+            <h1>Quiz-App</h1>
+        </nav>
+    </header>
+    <section class="config">
+
+        <ul class="list">
+        <div class="amount" id="box">
+            <h2>Questions</h2>
+            <p>Select the amount of questions you want to get!</p>
+            <div class="inputbox">
+            <input type="number" min="1" max="50" id="amount">
+            <span class="material-symbols-outlined">add_circle</span>
+            </div>
+            <div id="error-message" class="error1">Please enter a number!</div>
+        </div>
+        <div class="category" id="box">
+            <h2>Category</h2>
+            <p>Select the category of your quiz!</p>
+            <div class="inputbox">
+            <select name="category_selector" id="category">
+                <option value="21">Sports</option>
+                <option value="22">Geography</option>
+                <option value="23">History</option>
+                <option value="24">Politics</option>
+                <option value="27">Animals</option>
+                <option value="25">Art</option>
+                <option value="28">Vehicles</option>
+                <option value="20">Mythology</option>
+                <option value="29">Comics</option>
+                <option value="12">Musik</option>
+            </select>
+            <span class="material-symbols-outlined">category</span>
+            </div>
+        </div>
+        <div class="seconds" id="box">
+            <h2>Seconds</h2>
+            <p>Select the amount of time you want to have to think (seconds)!</p>
+            <div class="inputbox">
+            <input type="number" min="3" max="60" id="time">
+            <span class="material-symbols-outlined">timer</span>
+            </div>
+            <div id="error-message" class="error2">Please enter a number!</div>
+        </div>
+        <div class="submit"><button id="sub">Submit</button></div>
+    </div>
+    </ul>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
