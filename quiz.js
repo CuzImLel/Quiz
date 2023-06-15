@@ -11,6 +11,7 @@ const option2 = document.getElementById("second");
 const option3 = document.getElementById("third");
 const option4 = document.getElementById("fourth");
 const options = [option1,option2,option3,option4];
+const loader = document.getElementById("loader");
 let rightIndex = 0;
 let rightOption = 0;
 let progress = 0;
@@ -78,6 +79,7 @@ check()
 
 function loadQuestion(index, interval) {
     setTimeout(function() {
+        loader.style.visibility = "hidden"
         rightIndex = Math.floor(Math.random() * options.length);
         rightOption = options[rightIndex];
         rightOption.innerHTML = result.results[index].correct_answer;
@@ -151,4 +153,5 @@ function clear() {
         option.innerHTML = ""
     })
     questionbar.innerHTML = ""
+    loader.style.visibility = "visible"
 }
